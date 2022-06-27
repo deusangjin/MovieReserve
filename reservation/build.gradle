@@ -8,7 +8,7 @@ group = 'com.movie'
 version = '0.0.1-SNAPSHOT'
 
 //sourceCompatibility = '17' 
-//ÀÚ¹Ù¹öÀü 1.8·Î º¯°æÃ³¸®
+//Ã€ÃšÂ¹Ã™Â¹Ã¶Ã€Ã¼ 1.8Â·Ã ÂºÂ¯Â°Ã¦ÃƒÂ³Â¸Â®
 sourceCompatibility = '1.8'
 
 repositories {
@@ -20,16 +20,15 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	
 	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-jdbc
-	// Spring Boot¿¡¼­ Á¦°øÇÏ´Â JDBC ¿¬µ¿À» À§ÇÑ ½ºÅ¸ÅÍ 
+	// Spring BootÂ¿Â¡Â¼Â­ ÃÂ¦Â°Ã¸Ã‡ÃÂ´Ã‚ JDBC Â¿Â¬ÂµÂ¿Ã€Â» Ã€Â§Ã‡Ã‘ Â½ÂºÃ…Â¸Ã…Ã 
 	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-jdbc', version: '2.6.7'
 	
-	// MYSQL µå¶óÀÌ¹ö
+	// MYSQL ÂµÃ¥Â¶Ã³Ã€ÃŒÂ¹Ã¶
 	// https://mvnrepository.com/artifact/mysql/mysql-connector-java
 	implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.21'
 	
 	
 	
-}
 
 tasks.named('test') {
 	useJUnitPlatform()
