@@ -6,7 +6,10 @@ plugins {
 
 group = 'com.movie'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '17'
+
+//sourceCompatibility = '17' 
+//자바버전 1.8로 변경처리
+sourceCompatibility = '1.8'
 
 repositories {
 	mavenCentral()
@@ -15,6 +18,10 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	
+	// https://mvnrepository.com/artifact/mysql/mysql-connector-java
+	implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.21'
+	
 }
 
 tasks.named('test') {
