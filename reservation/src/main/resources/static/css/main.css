@@ -20,7 +20,7 @@ a {
     text-decoration: none;
     color : white;
 }
-
+/*###########################  상단  ###################################*/
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -71,9 +71,9 @@ a {
     font-size: 24px;
     color: #d49466;
 }
+/*###########################  상단  ###################################*/
 
-
-
+/*###########################  하단  ###################################*/
 .footer {
     width: 100%;
     background-color: #263343;
@@ -85,6 +85,9 @@ a {
     margin-top: 40px;
     color: white;
 }
+/*###########################  하단  ###################################*/
+
+/*###########################  상,하단 반응형  ###################################*/
 @media screen and (max-width:768px) {
     .navbar {
         flex-direction: column;
@@ -119,4 +122,44 @@ a {
         display: flex;
     }
 }
+/*###########################  상,하단 반응형  ###################################*/
 
+
+
+
+
+/*###########################  회원가입 테이블 css  ###################################*/
+.join_section{
+    margin-top: 5%;
+}
+
+
+
+.join_table {
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 0 20px;
+}
+.join_table tr {
+    text-align: left;
+}
+.join_table td input[type=text] {
+    width: 200px;
+    height: 25px;
+}
+.join_table td input[type=password] {
+    width: 200px;
+    height: 25px;
+}
+.join_table input {
+    border-radius: 7px;
+}
+.join_btn_div {
+    text-align: center;
+}
+.join_btn_div input[type=button]{
+    width: 8%;
+    height: 30px;
+    border: none;
+}
+/*###########################  회원가입 테이블 css  ###################################*/
