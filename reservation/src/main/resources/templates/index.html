@@ -1,11 +1,21 @@
-<!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<!-- 헤더 -->
+<head th:replace="settion/main_header :: main_header">
 </head>
 <body>
-	<p>Index Page</p>
-	<p>PARAM : <span th:text="${name}"></span></p> 
+
+<!-- 상단 -->
+<div th:fragment="asd" th:replace="/settion/main_top :: fragment-nav"></div>
+
+
+
+<!-- 메인 -->
+
+
+
+<!-- 하단 -->
+<div th:replace="/settion/main_footer :: main_footer"></div>
 </body>
 </html>
