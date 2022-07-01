@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<!-- 헤더 -->
+<head th:replace="settion/main_header :: main_header">
+</head>
+<body>
+
+<!-- 상단 -->
+<div th:fragment="asd" th:replace="/settion/main_top :: fragment-nav"></div>
+
+
+
+<!-- 메인 START -->
+<section class="join_section">
+        <table class="join_table">
+            <tr>
+                <th>아이디</th>
+                <td>
+                    <input type="text" id="" name="" placeholder="아이디를 입력해주세요.">
+                </td>
+            <tr>
+                <th>이름</th>
+                <td>
+                    <input type="text" id="" name="" placeholder="이름을 입력해주세요.">
+                </td>
+            </tr>
+            <tr>
+                <th>비밀번호</th>
+                <td>
+                    <input type="password" id="" name="" placeholder="비밀번호 입력">
+                </td>
+            </tr>
+            <tr>
+                <th>비밀번호 확인</th>
+                <td>
+                    <input type="password" id="" name="" placeholder="비밀번호 확인">
+                </td>
+            </tr>
+            <tr>
+                <th>휴대전화</th>
+                <td>
+                    <input type="text" id="" name="" placeholder="연락처를 입력해주세요.">
+                </td>
+            </tr>
+            </tr>
+            <tr>
+                <th>성별</th>
+                <td>  
+                    <input type="checkbox" value="">남
+                    <input type="checkbox" value="">여
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    
+                </td>
+            </tr>
+        </table>
+        <div class="join_btn_div">
+            <input type="button" class="btn_darkblue" value="확인">
+            <input type="button" class="btn_red" value="취소">
+        </div>
+       
+    </section>
+<!-- 메인 END -->
+
+<!-- 하단 -->
+<div th:replace="/settion/main_footer :: main_footer"></div>
+</body>
+</html>
