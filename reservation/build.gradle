@@ -17,13 +17,19 @@ dependencies {
 	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.0'
 	implementation 'mysql:mysql-connector-java'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-devtools
+	
+	//html수정 시 자동반영 
 	implementation group: 'org.springframework.boot', name: 'spring-boot-devtools', version: '2.7.0'
-	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-thymeleaf
+	
+	//타임리프
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf:2.6.6'
 	
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	// 스프링 시큐리티
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity5'
 	
+	// 스프링 테스트 JUnit
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 tasks.named('test') {
 	useJUnitPlatform()
