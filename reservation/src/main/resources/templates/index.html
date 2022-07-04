@@ -2,12 +2,12 @@
 <!DOCTYPE html>
 <html lang="ko" xmlns:th="http://www.thymeleaf.org">
 <!-- 헤더 -->
-<head th:replace="settion/main_header :: main_header">
+<head th:replace="/setting/main_header :: main_header">
 </head>
 <body>
 
 <!-- 상단 -->
-<div th:fragment="asd" th:replace="/settion/main_top :: fragment-nav"></div>
+<div th:fragment="asd" th:replace="/setting/main_top :: fragment-nav"></div>
 
 
 
@@ -16,6 +16,6 @@
 
 
 <!-- 하단 -->
-<div th:replace="/settion/main_footer :: main_footer"></div>
+<div th:replace="/setting/main_footer :: main_footer"></div>
 </body>
 </html>

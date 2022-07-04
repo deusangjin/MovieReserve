@@ -32,8 +32,8 @@ public class SettingController {
 	* ===========================================================
 	* @return
 	*/
-	@GetMapping("/settion/main_header")
-	public String main_header() {return "/settion/main_header";}
+	@GetMapping("/setting/main_header")
+	public String main_header() {return "/setting/main_header";}
 	
 	/**
 	* @methodName    : main_top
@@ -44,8 +44,8 @@ public class SettingController {
 	* ===========================================================
 	* @return
 	*/
-	@GetMapping("/settion/main_top")
-	public String main_top() {return "/settion/main_top";}
+	@GetMapping("/setting/main_top")
+	public String main_top() {return "/setting/main_top";}
 	
 	/**
 	* @methodName    : main_footer
@@ -56,6 +56,6 @@ public class SettingController {
 	* ===========================================================
 	* @return
 	*/
-	@GetMapping("/settion/main_footer")
-	public String main_footer() {return "/settion/main_footer";}
+	@GetMapping("/setting/main_footer")
+	public String main_footer() {return "/setting/main_footer";}
 }

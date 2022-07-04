@@ -25,9 +25,9 @@ public class HomeConterller {
     	return "index";
     }
     
-    @GetMapping("/member_sign up")
+    @GetMapping("/member_sign_up")
     public String getMember_join(HttpServletRequest request, Model modem) {
-    	return "/member_sign up";
+    	return "/member_sign_up";
     }
     @GetMapping("/login")
     public String getMember_login(HttpServletRequest request, Model modem) {
