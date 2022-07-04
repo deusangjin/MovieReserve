@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.movie.reservation.dao.TestDAO">
-    <select id="getTestData" resultType="com.movie.reservation.dto.TestMapper">
-       select
-            title,
-            name
-        from
-            DB_TEST
+<mapper namespace="com.movie.reservation.dao.MemberDAO">
+    <insert id="JoinMember" parameterType="com.movie.reservation.dto.MemberDTO">
+    	Insert into member
+    	(
+    		member_id,
+    		member_pw,
+    		member_name,
+    		member_phone,
+    		member_gender,
+    		member_email
+    	)
+    	values
+    	(
+    		#{member_id},
+    		#{member_pw},
+    		#{member_name},
+    		#{member_phone},
+    		#{member_gender},
+    		#{member_email}
+    	)
+    </insert>
+    
+    <select id="IdCheck" parameterType="String" resultType="Integer">
+    	SELECT count(*) 
+    	FROM member 
+    	WHERE member_id=#{member_id} 
     </select>
 </mapper>

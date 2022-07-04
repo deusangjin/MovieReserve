@@ -7,6 +7,7 @@ public class MemberDTO{
 	String member_name;
 	String member_phone;
 	String member_gender;
+	String member_email;
 	
 	public int getMember_idx() {
 		return member_idx;
@@ -22,6 +23,9 @@ public class MemberDTO{
 	}
 	public String getMember_pw() {
 		return member_pw;
+	}
+	public String getMember_email() {
+		return member_email;
 	}
 	public void setMember_pw(String member_pw) {
 		this.member_pw = member_pw;
@@ -43,6 +47,9 @@ public class MemberDTO{
 	}
 	public void setMember_gender(String member_gender) {
 		this.member_gender = member_gender;
+	}
+	public void setMember_email(String member_email) {
+		this.member_email = member_email;
 	}
 	
 }
