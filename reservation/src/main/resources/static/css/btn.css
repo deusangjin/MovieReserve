@@ -1,0 +1,11 @@
+@charset "UTF-8";
+.btn_darkblue {
+    color: white;
+    background-color: rgb(88, 88, 110);
+    border-radius: 4px;
+}
+.btn_red {
+    color: white;
+    background-color: rgb(133, 123, 112);
+    border-radius: 4px;
+}
